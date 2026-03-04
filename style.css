@@ -129,13 +129,11 @@ a:hover {
 
 .profile-right {
     flex: 1;
-    padding-top: 0.5rem;
 }
 
 .name {
     font-size: 3.2rem;
     margin-bottom: 0.5rem;
-    font-style: italic;
 }
 
 .title {
