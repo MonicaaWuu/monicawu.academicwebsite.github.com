@@ -90,8 +90,10 @@ a:hover {
     text-transform: uppercase;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     opacity: 1;
+    font-weight: 500;
 }
 
 /* Hero Banner */
