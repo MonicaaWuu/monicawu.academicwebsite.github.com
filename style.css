@@ -118,13 +118,13 @@ a:hover {
 
 .profile-img {
     width: 100%;
-    /* No rounded corners, sharp edges for professional feel */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
     border: 1px solid #dcd7c9;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: block;
     background-color: #eaeaea;
-    /* Placeholder background */
-    min-height: 280px;
 }
 
 .profile-right {
