@@ -6,8 +6,8 @@
     --text-main: #333333;
     --text-light: #555555;
     --accent-color: #111111;
-    --font-serif: 'Lora', Georgia, serif;
-    --font-sans: 'Inter', Helvetica, Arial, sans-serif;
+    --font-serif: 'Times New Roman', Times, serif;
+    --font-sans: 'Times New Roman', Times, serif;
 }
 
 * {
@@ -120,7 +120,14 @@ a:hover {
 
 .profile-img {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    /* Stretch to fill the flex container height */
+    max-height: 480px;
+    /* Constrain it to match the text roughly */
+    object-fit: cover;
+    /* Cover prevents stretching */
+    object-position: top center;
+    /* Focus on the face */
     border: 1px solid #dcd7c9;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: block;
