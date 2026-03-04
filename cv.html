@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae | Monica Wu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        /* PDF Viewer Container CSS */
+        .pdf-container {
+            width: 100%;
+            height: calc(100vh - 55px);
+            /* 100% of viewport minus the navbar height */
+            display: flex;
+            justify-content: center;
+            background-color: #525659;
+            /* Standard PDF viewer background color */
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html" class="active">Curriculum Vitae</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="pdf-container fade-in">
+        <iframe src="CV_Monica_Wu.pdf#toolbar=0" title="Monica Wu Curriculum Vitae">
+            <p>Your browser does not support PDFs. <a href="CV_Monica_Wu.pdf">Download the PDF</a>.</p>
+        </iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
