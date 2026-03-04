@@ -113,8 +113,8 @@ a:hover {
     display: flex;
     gap: 4rem;
     margin-bottom: 5rem;
-    align-items: center;
-    /* Center aligns text alongside the taller image */
+    align-items: flex-start;
+    /* Reverting to flex-start so we can align tops manually */
 }
 
 .profile-left {
@@ -124,8 +124,8 @@ a:hover {
 
 .profile-img {
     width: 100%;
-    height: 440px;
-    /* Increased height to be taller than the text block */
+    height: 415px;
+    /* Tuned height to align the bottom with the Office 306 line */
     object-fit: cover;
     object-position: top center;
     border: 1px solid #dcd7c9;
@@ -136,6 +136,8 @@ a:hover {
 
 .profile-right {
     flex: 1;
+    margin-top: 1.2rem;
+    /* Pushes the text down so the image starts visibly higher */
 }
 
 .name {
