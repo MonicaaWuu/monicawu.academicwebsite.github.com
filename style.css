@@ -118,8 +118,8 @@ a:hover {
 }
 
 .profile-left {
-    flex: 0 0 340px;
-    /* Made the picture wider */
+    flex: 0 0 380px;
+    /* Made the picture slightly wider */
 }
 
 .profile-img {
